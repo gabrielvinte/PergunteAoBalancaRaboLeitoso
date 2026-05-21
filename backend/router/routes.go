@@ -11,5 +11,11 @@ func InitializeRoutes(router *gin.Engine) {
 	v1 := router.Group(basePath)
 	{
 		v1.POST("/", handler.TakeDecisionHandler)
+
+		v1.GET("/health", func(ctx *gin.Context) {
+			ctx.JSON(200, gin.H{
+				"status": "ok",
+			})
+		})
 	}
 }
