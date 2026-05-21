@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pergunte ao Balança-Rabo-Leitoso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="noise"></div>
+    <div class="particles-container">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+        <div class="particle p5"></div>
+        <div class="particle p6"></div>
+    </div>
+
+    <div class="intro">
+        <svg class="bird-draw" viewBox="0 0 900 500">
+            <path d="M 380 150 Q 430 90 500 110 Q 520 120 530 130 Q 555 115 575 112 Q 555 125 530 140 Q 580 200 540 270 Q 500 320 430 325"/>
+            <path d="M 380 150 Q 320 220 350 280 Q 370 310 430 325"/>
+            <path d="M 380 315 Q 360 400 350 460 Q 370 450 395 385"/>
+            <path d="M 365 180 Q 310 250 350 320 Q 370 360 390 390 Q 400 330 370 270 Q 350 220 365 180"/>
+            <path d="M 530 130 Q 480 145 385 160"/>
+            <path d="M 360 250 Q 380 290 385 320"/>
+            <path d="M 345 260 Q 360 300 365 330"/>
+            <path d="M 475 145 A 10 10 0 1 1 495 145 A 10 10 0 1 1 475 145"/>
+            <circle cx="485" cy="145" r="4"/>
+            <path d="M 460 310 L 440 355 M 440 355 L 430 365 M 440 355 L 435 375 M 440 355 L 450 370 M 440 355 L 455 355"/>
+            <path d="M 500 285 L 490 345 M 490 345 L 480 355 M 490 345 L 485 365 M 490 345 L 500 360 M 490 345 L 505 345"/>
+        </svg>
+        <div class="intro-overlay"></div>
+        <h1 class="intro-title">BALANÇA-RABO-LEITOSO</h1>
+        <p class="intro-sub">O canto já decidiu.</p>
+    </div>
+
+    <div class="main-content">
+        <div class="bird-container">
+            <img src="https://s3.amazonaws.com/media.wikiaves.com.br/images/1964/4691116_e51eff9847344cbfddabd6b91b173898.jpg" alt="Balança-Rabo-Leitoso">
+        </div>
+
+        <h1>Pergunte ao<br>Balança-Rabo-Leitoso</h1>
+        <p class="subtitle">
+            O canto já conhece sua decisão.<br>
+            Você apenas deseja ouvi-la.
+        </p>
+
+        <div class="input-group">
+            <input type="text" id="opcao1" placeholder="Primeira possibilidade">
+            <span>OU</span>
+            <input type="text" id="opcao2" placeholder="Segunda possibilidade">
+        </div>
+
+        <button id="btnConsultar">CONSULTAR O CANTO</button>
+
+        <div class="resultado-box" id="resultadoArea">
+            <small>O BALANÇA-RABO-LEITOSO RESPONDEU</small>
+            <h2 id="textoResposta">████████████</h2>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
