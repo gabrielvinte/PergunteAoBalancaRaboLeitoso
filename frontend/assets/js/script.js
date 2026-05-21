@@ -20,7 +20,7 @@ async function iniciarConsulta() {
         birdAudio.currentTime = 0;
         await birdAudio.play();
 
-        const response = await fetch("http://localhost:8080/api/", {
+        const response = await fetch("https://pergunteaobalancaraboleitoso.onrender.com/api/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
